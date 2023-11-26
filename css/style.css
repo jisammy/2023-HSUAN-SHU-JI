@@ -1,0 +1,215 @@
+/* reset 減少誤差*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'微軟正黑體';   
+}
+body{
+    background-color: #EEEEEE;
+}
+
+.main{
+   background-image: url(../img/mainbg-2.jpg);
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+}
+.nav{
+    padding: 20px;
+}
+.nav > a{
+    text-decoration: none;
+    color: #fff ;
+    font-size: 24px;
+    margin: 0 15px;    
+}
+
+.mainContent{
+    color: #fff;
+    width: 500px;
+    /* 有設定固定寬度width 才用margin */
+    margin: 0 auto 0;
+    margin-top: 400px;
+    text-align: center;
+
+}
+.mainContent > hr{
+    margin: 15px 0;
+}
+.title1{
+    font-size: 20px;
+    color: #ccc;
+}
+.title2{
+    font-size: 60px;
+    color: #ccc;
+}
+
+.news{
+    /* 第一種方式 */
+display: flex;
+justify-content: center;
+padding: 100px 0;
+gap: 50px;
+
+/* 第二種方式 */
+/* display: flex;
+padding: 100px 0;
+width: 1200px;
+margin: 0 auto; */
+
+}
+.newsCard{
+    /* 第一種方式 */
+    width: 600px;
+    background-color: #fff;
+    padding-bottom: 40px;
+    text-align: center;
+
+}
+.newsCard > img{
+    width: 100%;
+    object-fit: cover;
+}
+.newsCard > div{
+    color: #ccc;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 10px;
+    margin: 10px 0;
+}
+.newsCard > hr{
+    width: 450px;
+    margin: 10px auto;
+}
+.newsCard > h3{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.newsCard > p{
+    padding: 0 25px;
+    margin-bottom: 50px;
+}
+.newsCard > a{
+border: 1px solid #ccc;
+padding: 8px 80px;
+text-decoration: none;
+color: #ccc;
+/* 動畫時間 */
+transition: 0.5s;
+}
+
+/* hover 滑鼠觸摸 */
+.newsCard > a:hover{
+/* 觸摸後樣式 */
+background-color: #ccc;
+color:#fff;
+}
+
+.bgFixed{
+    background-image: url(../img/view.jpg);
+    /* 背景固定 */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bgFixed > div{
+    padding: 100px 0;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+    /* 濾鏡 : 效果(模糊) 效果(透明度) */
+    backdrop-filter: blur(5px) opacity(80%);
+    transition: 0.5s;
+}
+
+.bgFixed > div:hover{
+    backdrop-filter: blur(1px) opacity(100%) sepia(20%);
+}
+
+.about{
+    padding: 25px 0 50px;
+}
+.aboutTitle{
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    letter-spacing: 20px;
+    /* margin-bottom: 15px; */
+}
+
+.aboutCard{
+    display: flex;
+    justify-content: center;
+    padding: 0 100px;
+    gap: 30px;
+    margin-top: 30px;
+}
+.card{
+width: 50%;
+height: 350px;
+}
+
+.card > a{
+    text-decoration: none;
+}
+
+.card > a > div{
+    color: #fff;
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;
+    /* 垂直置中 */
+    align-items: center;
+    height: 100%;
+    font-size: 40px;
+    backdrop-filter: blur(5px) opacity(80%);
+}
+
+.Card1{
+    background-image: url(../img/tea1.jpg);
+    background-size: cover;
+}
+.Card2{
+    background-image: url(../img/tea2.jpg);
+    background-size: cover;
+
+}
+
+.map{
+height: 350px;
+}
+.map > iframe{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    background-color: #ece1e1;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.icon > a{
+    text-decoration: none;
+    color: #333;
+}
+
+.icon2 > a{
+    text-decoration: none;
+}
+.icon2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconfb{
+    width: 27px;
+    height: 27px;
+}
+
+
