@@ -30,7 +30,7 @@ body{
     width: 500px;
     /* 有設定固定寬度width 才用margin */
     margin: 0 auto 0;
-    margin-top: 400px;
+    margin-top: 250px;
     text-align: center;
 
 }
@@ -210,6 +210,19 @@ footer{
 .iconfb{
     width: 27px;
     height: 27px;
+}
+
+/* @media screen and 之間一定要有空格 */
+@media screen and (max-width:768px) {
+    .main{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 50vh;
+    }
+    .mainContent{
+        margin-top: 200px;
+    }
+    
 }
 
 
