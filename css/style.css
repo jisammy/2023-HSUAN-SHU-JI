@@ -214,6 +214,11 @@ footer{
 
 /* @media screen and 之間一定要有空格 */
 @media screen and (max-width:768px) {
+    
+
+    .nav > a{
+    font-size: 18px;
+    }
     .main{
         background-size: 100%;
         background-repeat: no-repeat;
@@ -221,8 +226,42 @@ footer{
     }
     .mainContent{
         margin-top: 200px;
+        width: 300px;
+    }
+    .mainContent > .title1{
+        font-size: 16px;
+    }
+    .mainContent > .title2{
+        font-size: 35px;
     }
     
+    .news{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .bgFixed{
+        background-position: center;
+    }
+    .bgFixed > div{
+        font-size: 35px;
+    }
+    .aboutTitle{
+        font-size: 20px;
+    }
+    .aboutCard{
+        display: flex;
+        flex-direction: column;
+    }
+    .Card1{
+        width: 100%;
+    }
+    .Card2{
+        width: 100%;
+    }
 }
 
-
+@media screen and (max-width:414px) {
+    
+}
