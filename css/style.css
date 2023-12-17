@@ -27,15 +27,22 @@ body{
 
 .mainContent{
     color: #fff;
-    width: 500px;
+    /* width: 500px; */
     /* 有設定固定寬度width 才用margin */
-    margin: 0 auto 0;
-    margin-top: 250px;
+    /* margin: 0 auto 0;
+    margin-top: 250px; */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: -70px;
 
 }
 .mainContent > hr{
     margin: 15px 0;
+    width: 500px;
 }
 .title1{
     font-size: 20px;
@@ -59,6 +66,11 @@ padding: 100px 0;
 width: 1200px;
 margin: 0 auto; */
 
+}
+
+/* none 讓斷行消失 */
+.br414{
+    display: none;
 }
 .newsCard{
     /* 第一種方式 */
@@ -224,10 +236,10 @@ footer{
         background-repeat: no-repeat;
         height: 50vh;
     }
-    .mainContent{
+    /* .mainContent{
         margin-top: 200px;
         width: 300px;
-    }
+    } */
     .mainContent > .title1{
         font-size: 16px;
     }
@@ -263,5 +275,27 @@ footer{
 }
 
 @media screen and (max-width:414px) {
-    
+/* block 讓斷行出現 */
+    .br414{
+    display: block; 
+}
+
+    .mainContent > hr{
+        width: 70%;
+        margin: 5px auto;
+    }
+    .main{
+        height: 400px;
+        background-size: cover ;
+        background-position-x: -40px;
+    }
+    .newsCard , .newsCard > hr{
+        width: 100%;
+    }
+    .news{
+        padding: 50px 20px;
+    }
+    .aboutCard {
+        padding: 0 20px;
+    }
 }
